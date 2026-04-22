@@ -1,0 +1,40 @@
+.song-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #181818;
+  padding: 14px 18px;
+  border-radius: 14px;
+  transition: 0.2s;
+  gap: 14px;
+}
+
+.song-card:hover {
+  background: #242424;
+}
+
+.song-cover {
+  width: 55px;
+  height: 55px;
+  background: #333;
+  border-radius: 10px;
+}
+
+.song-info {
+  flex: 1;
+}
+
+.song-info h4 {
+  margin-bottom: 4px;
+  font-size: 1rem;
+}
+
+.song-info p {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+}
+
+.song-duration {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+}
