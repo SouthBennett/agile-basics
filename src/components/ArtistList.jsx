@@ -1,6 +1,5 @@
-import SongCard from "./SongCard"
-import './ArtistList.css'
-
+import ArtistCard from "./ArtistCard";
+import "./ArtistList.css";
 
 function ArtistList({ artists }) {
   return (
@@ -9,11 +8,11 @@ function ArtistList({ artists }) {
 
       <div className="artist-list">
         {artists.map((artist) => (
-          <p key={artist.id}>{artist.name}</p>
+          <ArtistCard key={artist.id} artist={artist} />
         ))}
       </div>
     </section>
-  )
+  );
 }
 
-export default ArtistList
+export default ArtistList;
