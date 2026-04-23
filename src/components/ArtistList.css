@@ -3,7 +3,7 @@
   font-size: 1.4rem;
 }
 
-.song-list {
+.artist-list {
   display: flex;
   flex-direction: column;
   gap: 14px;

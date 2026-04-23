@@ -3,7 +3,8 @@ import './App.css'
 import Sidebar from "./components/Sidebar"
 import Topbar from "./components/Topbar"
 import Hero from "./components/Hero"
-import SongList from "./components/SongList"
+import SongCard from './components/SongCard'
+import ArtistList from "./components/ArtistList"
 import Player from "./components/Player"
 import data from './data.json'
 
@@ -18,7 +19,8 @@ function App() {
         <main className="main-content">
           <Topbar data={data}/>
           <Hero />
-          <SongList />
+          <SongCard />
+          <ArtistList artists={data.artists}/>
         </main>
 
         <Player />
