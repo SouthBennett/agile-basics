@@ -1,8 +1,14 @@
 import './Topbar.css'
 
-function Topbar() {
+function Topbar({data}) {
   return (
     <header className="topbar">
+      <div>
+        {/* <h1>{data.label}</h1> */}
+        <p>{data.tagline}</p>
+        <p>{data.city } {"\u2022"} Founded {data.founded}</p>
+      </div>
+
       <input
         type="text"
         className="search-bar"
