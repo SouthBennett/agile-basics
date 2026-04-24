@@ -13,7 +13,7 @@
         { "title": "Soft Machinery", "year": 2021 },
         { "title": "Glass Ceiling", "year": 2023 }
       ],
-      "image": "/LunaPark.png"
+      "image": "LunaPark.png"
     },
     {
       "id": 2,
@@ -24,7 +24,7 @@
         { "title": "Roots & Wire", "year": 2020 },
         { "title": "Quiet Season", "year": 2022 }
       ],
-      "image": "/HollowGrove.png"
+      "image": "HollowGrove.png"
     },
     {
       "id": 3,
@@ -35,7 +35,7 @@
         { "title": "Midnight Protocol", "year": 2022 },
         { "title": "Signal/Noise", "year": 2024 }
       ],
-      "image": "/NeonDrifter.png"
+      "image": "NeonDrifter.png"
     },
     {
       "id": 4,
@@ -47,7 +47,7 @@
         { "title": "Passerine", "year": 2021 },
         { "title": "Blue Hours", "year": 2024 }
       ],
-      "image": "/CallaFrost.png"
+      "image": "CallaFrost.png"
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@
         { "title": "Exit Signs", "year": 2021 },
         { "title": "Cartography", "year": 2023 }
       ],
-      "image": "/BrokenCompass.png"
+      "image": "BrokenCompass.png"
     }
   ]
 }

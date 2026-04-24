@@ -5,7 +5,7 @@ function Player() {
     <footer className="player">
       <div className="now-playing">
         <div className="mini-cover">
-          <img src='/LunaPark.png' alt='luna park cover art' />
+          <img src='LunaPark.png' alt='luna park cover art' />
         </div>
         <div>
           <h4>Luna Park</h4>
