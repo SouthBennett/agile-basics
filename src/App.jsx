@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import ArtistCard from "./components/ArtistCard";
 import ArtistList from "./components/ArtistList";
 import Player from "./components/Player";
+import FavoritesList from "./components/FavoritesList"
 import data from "./data.json";
 
 
@@ -14,6 +15,13 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedGenre, setSelectedGenre] = useState("All");
   const [sortOption, setSortOption] = useState("name-asc");
+  const [favorites, setFavorites] = useState([]);
+
+  const addToFavorites = (artist) => {
+    setFavorites((prev) => [...prev, artist]);
+  }
+
+  console.log("Favorites", favorites)
 
   const filteredArtists = data.artists
       .filter((artist) => {
@@ -44,7 +52,7 @@ function App() {
       <Sidebar />
       <main className="main-content">
         <Topbar data={data} 
-          serachTerm={searchTerm}
+          searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           selectedGenre={selectedGenre}
           setSelectedGenre={setSelectedGenre}
@@ -53,7 +61,11 @@ function App() {
         />
         <Hero />
         {/* <ArtistCard /> */}
-        <ArtistList artists={filteredArtists} />
+        <FavoritesList favorites={favorites} />
+        <ArtistList 
+          artists={filteredArtists} 
+          addToFavorites={addToFavorites}
+        />
       </main>
 
       <Player />

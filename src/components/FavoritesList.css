@@ -1,0 +1,21 @@
+.favorites-section {
+  margin: 20px 0;
+  color: white; /* ensures visibility */
+}
+
+.favorites-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.favorite-item {
+  padding: 8px;
+  background-color: #1e1e1e; /* dark card */
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.favorite-item:hover {
+  background-color: #2a2a2a;
+}

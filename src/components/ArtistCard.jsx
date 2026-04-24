@@ -1,7 +1,7 @@
 import './ArtistCard.css'
 import AlbumItem from './AlbumItem'
 
-function ArtistCard({ artist }) {
+function ArtistCard({ artist, addToFavorites }) {
 
   return (
     <div className="artist-card">
@@ -11,6 +11,7 @@ function ArtistCard({ artist }) {
         <h4>{artist.name}</h4>
         <p>{artist.genre}</p>
         <p>{artist.bio}</p>
+        
 
         <div>
           {artist.albums.map((album, index) => (
@@ -18,6 +19,10 @@ function ArtistCard({ artist }) {
           ))}
         </div>
       </div>
+
+      <button onClick={() => addToFavorites(artist)}>
+        Add to Playlist
+      </button>
 
       {/* <span className="song-duration">duration</span> */}
     </div>
