@@ -12,7 +12,8 @@
       "albums": [
         { "title": "Soft Machinery", "year": 2021 },
         { "title": "Glass Ceiling", "year": 2023 }
-      ]
+      ],
+      "image": "/LunaPark.png"
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "albums": [
         { "title": "Roots & Wire", "year": 2020 },
         { "title": "Quiet Season", "year": 2022 }
-      ]
+      ],
+      "image": "/HollowGrove.png"
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
       "albums": [
         { "title": "Midnight Protocol", "year": 2022 },
         { "title": "Signal/Noise", "year": 2024 }
-      ]
+      ],
+      "image": "/NeonDrifter.png"
     },
     {
       "id": 4,
@@ -43,7 +46,8 @@
         { "title": "Still Water", "year": 2019 },
         { "title": "Passerine", "year": 2021 },
         { "title": "Blue Hours", "year": 2024 }
-      ]
+      ],
+      "image": "/CallaFrost.png"
     },
     {
       "id": 5,
@@ -53,7 +57,8 @@
       "albums": [
         { "title": "Exit Signs", "year": 2021 },
         { "title": "Cartography", "year": 2023 }
-      ]
+      ],
+      "image": "/BrokenCompass.png"
     }
   ]
 }

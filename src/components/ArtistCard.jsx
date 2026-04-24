@@ -5,7 +5,9 @@ export default function ArtistCard({ artist, addToFavorites }) {
 
   return (
     <div className="artist-card">
-      <div className="artist-cover"></div>
+      <div className="artist-cover">
+        <img src={artist.image} alt='Cover-image'/>
+      </div>
 
       <div className="artist-info">
         <h4>{artist.name}</h4>
