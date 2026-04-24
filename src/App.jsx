@@ -18,8 +18,13 @@ function App() {
   const [favorites, setFavorites] = useState([]);
 
   const addToFavorites = (artist) => {
-    setFavorites((prev) => [...prev, artist]);
-  }
+    setFavorites((prev) => {
+      if (prev.find((el) => el.id === artist.id)) return prev;
+      return [...prev, artist]
+    });
+  };
+
+  const [selectedArtistId, setSelectedArtistId] = useState(null);
 
   console.log("Favorites", favorites)
 
@@ -61,7 +66,11 @@ function App() {
         />
         <Hero />
         {/* <ArtistCard /> */}
-        <FavoritesList favorites={favorites} />
+        <FavoritesList 
+          favorites={favorites} 
+          selectedArtistId={selectedArtistId}
+          setSelectedArtistId={setSelectedArtistId}
+        />
         <ArtistList 
           artists={filteredArtists} 
           addToFavorites={addToFavorites}

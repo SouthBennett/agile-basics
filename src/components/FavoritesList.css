@@ -14,8 +14,14 @@
   background-color: #1e1e1e; /* dark card */
   border-radius: 6px;
   cursor: pointer;
+  color: white;
 }
 
 .favorite-item:hover {
+  background-color: #2a2a2a;
+}
+
+.favorite-item.active {
+  color: #4caf50;
   background-color: #2a2a2a;
 }
