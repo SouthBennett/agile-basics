@@ -1,7 +1,7 @@
 import ArtistCard from "./ArtistCard";
 import "./ArtistList.css";
 
-function ArtistList({ artists, addToFavorites }) {
+export default function ArtistList({ artists, addToFavorites }) {
   return (
     <section className="section">
       <h3>Artists</h3>
@@ -18,5 +18,3 @@ function ArtistList({ artists, addToFavorites }) {
     </section>
   );
 }
-
-export default ArtistList;

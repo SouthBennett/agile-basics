@@ -1,7 +1,7 @@
 import './ArtistCard.css'
 import AlbumItem from './AlbumItem'
 
-function ArtistCard({ artist, addToFavorites }) {
+export default function ArtistCard({ artist, addToFavorites }) {
 
   return (
     <div className="artist-card">
@@ -28,5 +28,3 @@ function ArtistCard({ artist, addToFavorites }) {
     </div>
   )
 }
-
-export default ArtistCard
